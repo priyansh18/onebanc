@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+main{
+    display: flex;
+    width: 100vw;
+    font-family: 'Comic Sans MS',"Roboto","Cambria","lucida grande","lucida sans",Geneva,"sans-serif",tahoma,helvetica,arial;
+    font-size: medium;
+
+}
+
+.alpha, .beta{
+    width: 45%;
+    height: 100vh;
+    /* border: 3px solid red; */
+    display: flex;
+    color: aliceblue;
+}
+
+.alpha{
+    padding-right: 25px;
+}
+/* .beta{
+
+    .left{
+        border-right: 3px dotted black;
+    }
+
+    .right{
+
+    }
+}  */
+
+
+.alpha .left {
+    width: 85%;
+    /* border: 3px solid red; */
+    background-color: #0387d1;
+    padding: 10px;
+    align-items: center;
+    padding-left: 25px;
+}
+
+
+.invitation{
+    background-color: #004da3;
+    height: 110px;
+    width: 500px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.invitation .mailbox{
+    display: flex;
+    width: 90%;
+    height: 44px;
+}
+
+button {
+    background-color: #1c1d1d; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+.alpha .right {
+    width: 15%;
+    /* border: 3px solid yellow; */
+    background-color: #0387d1;
+    padding-right: 100px ;
+
+}
+.alpha .right img{
+    height: 100vh;
+}
+
+
+.beta .left, .beta .right{
+    width: 50%;
+    color: black;
+    padding-top: 100px;
+    display: flex;
+
+}
+
+.gamma{
+	visibility: hidden;
+}
+
+.short-text { 
+	display: none; 
+}
+
+
+.boy-img{
+    padding-top: 50px;
+}
+
+/* Left Icons */
+
+.beta .right{
+    border-left: 2px dashed black ;
+}
+
+.beta .left{
+	margin-right: 110px;
+}
+
+.beta{
+    position: relative;
+}
+
+.beta .features-regular{
+    position: absolute;
+}
+
+.features{
+    position: relative;
+}
+
+.left-forex{
+    top: 10px;
+    right: 50px;
+}
+
+.left-analytics{
+    top: 10px;
+    right: 14px;
+}
+.left-investment{
+    top: 40px;
+    right: 50px;
+    padding-left: 10px;
+}
+
+.left-card{
+    bottom: 350px;
+    left:90px;
+}
+
+.left-saving{
+    bottom: 250px;
+    left:30px;
+}
+
+.left-cash{
+    bottom: 440px;
+    left:200px;
+}
+
+.left-reward{
+    bottom: 380px;
+    left:150px;
+}
+.left-loan{
+    bottom: 300px;
+    left:210px;
+}
+
+.left-support{
+    bottom: 340px;
+    left:220px;
+    padding-right:10px;
+}
+
+/* Right Icons */
+
+.beta .features-onebanc{
+    position: absolute;
+		top:10px;
+}
+
+.features{
+    position: relative;
+}
+
+
+.left-line{
+    left: 300px;
+    top:70px;
+    transform: translateY(16px) translateX(25px) rotate(236deg) rotateY(-139deg);
+}
+
+.right-line{
+    left: 60px;
+    bottom: 65px;
+    transform: translateY(16px) translateX(30px) rotate(110deg);
+}
+
+
+.img-hor-vert {
+    -moz-transform: scale(-1, -1);
+    -o-transform: scale(-1, -1);
+    /* -webkit-transform: scale(-1, -1); */
+    transform: scale(-1, -1);
+}   
+
+.right-forex{
+    bottom: 285px;
+    right:-127px
+}
+
+.right-analytics{
+    bottom: 170px;
+    right: -160px
+}
+.right-investment{
+    bottom: 230px;
+    right:-216px
+}
+
+.right-card{
+    bottom: 502px;
+    right:-309px
+}
+
+.right-saving{
+    bottom: 395px;
+    right:-199px
+}
+
+.right-cash{
+    bottom: 671px;
+    right:-159px
+}
+
+.right-reward{
+    bottom: 448px;
+    right:-256px
+}
+.right-loan{
+    bottom: 614px;
+    right:-222px
+}
+
+.right-support{
+    bottom: 670px;
+    right:-283px
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.small-screen{
+	visibility: hidden;
+	display: none;
+}
+
+
+
+@media screen and (max-width: 500px){
+
+	body *{
+		font: 14px "Roboto","Cambria","lucida grande","lucida sans",Geneva,"sans-serif",tahoma,helvetica,arial
+		
+	}
+
+	.short-text { display: inline-block; }
+  .full-text { display: none; }
+
+	.invitation{
+		height: 20px;
+	}
+
+	.beta{
+		visibility: hidden;
+	}
+
+	.alpha{
+		width: 100vw;
+		padding-right: 0;
+		height: auto;
+	}
+
+	.small-screen{
+		visibility: visible;
+		display: inline-block;
+	}
+
+	.alpha .features-regular{
+    position: absolute;
+}
+
+.features{
+    position: relative;
+}
+
+.left-forex{
+    top: 42px;
+    right: -7px;
+}
+
+.left-analytics{
+    top: 23px;
+    right: -2px;
+}
+.left-investment{
+    top: 49px;
+    right: 40px;
+}
+
+.left-card{
+    bottom: 250px;
+    left:162px;
+}
+
+.left-saving{
+    bottom: 187px;
+    left:62px;
+}
+
+.left-cash{
+    bottom: 321px;
+    left:298px;
+}
+
+.left-reward{
+    bottom: 278px;
+    left:244px;
+}
+.left-loan{
+    bottom: 148px;
+    left:318px;
+}
+
+.left-support{
+    bottom: 300px;
+    left:308px;
+}
+
+	.alpha .left{
+		width: 100%;
+	}
+	.alpha .right{
+		visibility: hidden;
+		width: 0%;
+		padding: 0;
+	}
+
+	.invitation {
+    height: 152px;
+    width: 100%;
+}
+}
+
+@media screen and (min-width:500px) and (max-width:1100px){
+
+	
+	body *{
+		font: 17px "Roboto","Cambria","lucida grande","lucida sans",Geneva,"sans-serif",tahoma,helvetica,arial
+	}
+
+	.beta{
+		visibility: hidden;
+		display: none;
+	}
+
+
+	.gamma{
+		visibility: visible;
+		background-color: #0387d1;
+		width: 100vh;
+		margin-left: 7vh;
+	}
+	
+	.alpha .left{
+		width: 100vw;
+		height: auto;
+	}
+
+	.alpha .right{
+		display: none;
+		visibility: hidden;
+		
+	}
+	
+	.onebanc{
+		margin-bottom: -40px;
+
+	}
+
+	.features-one{
+		margin-top: 200px;
+		margin-left: 40px;
+		margin-right: 10px;
+	}
+	
+.features{
+    position: relative;
+}
+
+.left-forex{
+    top: -131px;
+    right: -11px;
+}
+
+.left-analytics{
+    top: -146px;
+    right: -20px;
+}
+.left-investment{
+    top: -126px;
+    right: 100px;
+}
+
+.left-card{
+    bottom: 439px;
+    left:215px;
+}
+
+.left-saving{
+    bottom: 371px;
+    left:99px;
+}
+
+.left-cash{
+    bottom: 530px;
+    left:419px;
+}
+
+.left-reward{
+    bottom: 481px;
+    left:318px;
+}
+.left-loan{
+    bottom: 340px;
+    left:436px;
+}
+
+.left-support{
+    bottom: 510px;
+    left:425px;
+}
+}
