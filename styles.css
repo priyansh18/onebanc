@@ -1,8 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    margin-right: 0;
     box-sizing: border-box;
 
+}
+
+h1{
+    font-size: 23px;
 }
 
 main{
@@ -20,6 +25,7 @@ main{
     display: flex;
     color: aliceblue;
 }
+
 
 .alpha{
     padding-right: 25px;
@@ -40,10 +46,12 @@ main{
     width: 85%;
     /* border: 3px solid red; */
     background-color: #0387d1;
+    height: 100vh;
     padding: 10px;
     align-items: center;
     padding-left: 25px;
 }
+
 
 
 .invitation{
@@ -55,6 +63,23 @@ main{
     padding-right: 15px;
     padding-bottom: 20px;
     align-items: center;
+}
+
+#text {
+	display: inline-block;
+	vertical-align: middle;
+	color: aliceblue;
+	letter-spacing: 1px;
+    font-size: 40px;
+}
+
+#cursor {
+	display: inline-block;
+	vertical-align: middle;
+	width: 3px;
+	height: 50px;
+    background-color: black;
+	animation: blink .100s step-end infinite;
 }
 
 .invitation .mailbox{
@@ -87,7 +112,7 @@ button {
 
 
 .beta .left, .beta .right{
-    width: 50%;
+    width: 70%;
     color: black;
     padding-top: 100px;
     display: flex;
@@ -95,7 +120,7 @@ button {
 }
 
 .gamma{
-	visibility: hidden;
+    display: none;
 }
 
 .short-text { 
@@ -127,6 +152,8 @@ button {
 
 .features{
     position: relative;
+    transition: all 0.3s ease;
+    fill:white;
 }
 
 .left-forex{
@@ -261,9 +288,14 @@ button {
 	display: none;
 }
 
+/* .gamma{
+    display: none;
+    visibility: hidden;
+} */
 
 
-@media screen and (max-width: 500px){
+
+@media screen and (max-width: 450px){
 
 	body *{
 		font: 14px "Roboto","Cambria","lucida grande","lucida sans",Geneva,"sans-serif",tahoma,helvetica,arial
@@ -271,7 +303,9 @@ button {
 	}
 
 	.short-text { display: inline-block; }
-  .full-text { display: none; }
+  .full-text { 
+      display: none; 
+    }
 
 	.invitation{
 		height: 20px;
@@ -284,8 +318,30 @@ button {
 	.alpha{
 		width: 100vw;
 		padding-right: 0;
-		height: auto;
+		height: 100%;
+
 	}
+
+    .logo{
+        background-color: #0387d1;
+        width: 100vw;
+        margin-left: -25px;
+        margin-top: 7px;
+    }
+
+    .condition{
+        background-color: #0387d1;
+        width: 100vw;
+        margin-top: -16px;
+        margin-left: -25px;
+
+
+        
+    }
+
+    .short-text{
+        visibility: visible;
+    }
 
 	.small-screen{
 		visibility: visible;
@@ -356,6 +412,14 @@ button {
     height: 152px;
     width: 100%;
 }
+.beta{
+    visibility: hidden;
+    display: none;
+}
+.gamma{
+    visibility: hidden;
+    display: none;
+}
 }
 
 @media screen and (min-width:500px) and (max-width:1100px){
@@ -370,8 +434,16 @@ button {
 		display: none;
 	}
 
+    .short-text { display: inline-block; }
+  .full-text { 
+      display: none; 
+    }
+
+
+
 
 	.gamma{
+        display: inline;
 		visibility: visible;
 		background-color: #0387d1;
 		width: 100vh;
@@ -398,6 +470,7 @@ button {
 		margin-top: 200px;
 		margin-left: 40px;
 		margin-right: 10px;
+        margin-bottom: -177px;
 	}
 	
 .features{
