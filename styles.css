@@ -6,10 +6,11 @@
 
 }
 
-.add-animation{
+.add-animation {
     color: #000;
-    text-shadow: 1px 1px 4px #848484;    
-}
+    text-shadow: 20px 4px 14px rgb(36, 3, 255);
+    /* border: 3px solid red; */
+  }
 
 h1{
     font-size: 23px;
@@ -161,11 +162,6 @@ button {
     fill:white;
 }
 
-.left-forex{
-    top: 10px;
-    right: 50px;
-}
-
 .left-analytics{
     top: 10px;
     right: 14px;
@@ -175,10 +171,9 @@ button {
     right: 50px;
     padding-left: 10px;
 }
-
-.left-card{
-    bottom: 350px;
-    left:90px;
+.left-forex{
+    top: 10px;
+    right: 50px;
 }
 
 .left-saving{
@@ -186,14 +181,19 @@ button {
     left:30px;
 }
 
-.left-cash{
-    bottom: 440px;
-    left:200px;
+.left-card{
+    bottom: 350px;
+    left:90px;
 }
 
 .left-reward{
     bottom: 380px;
     left:150px;
+}   
+
+.left-cash{
+    bottom: 440px;
+    left:200px;
 }
 .left-loan{
     bottom: 300px;
@@ -237,6 +237,10 @@ button {
     /* -webkit-transform: scale(-1, -1); */
     transform: scale(-1, -1);
 }   
+.right-investment{
+    bottom: 230px;
+    right:-216px
+}
 
 .right-forex{
     bottom: 285px;
@@ -247,9 +251,10 @@ button {
     bottom: 170px;
     right: -160px
 }
-.right-investment{
-    bottom: 230px;
-    right:-216px
+
+.right-saving{
+    bottom: 395px;
+    right:-199px
 }
 
 .right-card{
@@ -257,9 +262,9 @@ button {
     right:-309px
 }
 
-.right-saving{
-    bottom: 395px;
-    right:-199px
+.right-reward{
+    bottom: 448px;
+    right:-256px
 }
 
 .right-cash{
@@ -267,10 +272,6 @@ button {
     right:-159px
 }
 
-.right-reward{
-    bottom: 448px;
-    right:-256px
-}
 .right-loan{
     bottom: 614px;
     right:-222px
