@@ -6,6 +6,11 @@
 
 }
 
+.add-animation{
+    color: #000;
+    text-shadow: 1px 1px 4px #848484;    
+}
+
 h1{
     font-size: 23px;
 }
